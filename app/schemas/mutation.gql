@@ -1,0 +1,10 @@
+type BookMutationResponse implements MutationResponse {
+  code: String!
+  success: Boolean!
+  message: String!
+  book: Book
+}
+
+type Mutation {
+  addBook(isbn: Int, title: String, author: String): Book
+}
