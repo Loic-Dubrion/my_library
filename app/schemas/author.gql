@@ -1,5 +1,5 @@
 type Author {
   id: ID
-  name: String! # Can't return null
+  name: String! 
   books: [Book]
 }

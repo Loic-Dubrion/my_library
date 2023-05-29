@@ -1,5 +1,3 @@
-# Ce type 'Livre' définit les champs interrogeables pour chaque livre de notre source de données.  
-
 type Book {
   id: ID
   isbn: Int!

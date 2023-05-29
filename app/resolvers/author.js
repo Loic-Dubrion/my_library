@@ -1,7 +1,12 @@
-import { books } from '../../data/index.js';
+import BookDatamapper from '../datamappers/BookDatamapper.js';
+import Book from '../models/Book.js';
 
-export const Author = {
-  books: (author) => {
-    return books.filter(book => book.authorId === author.id);
+const bookDatamapper = new BookDatamapper(Book);
+
+const Author = {
+  books: async (author) => {
+    return await bookDatamapper.findByAuthor(author.id);
   },
 };
+
+export default Author;

@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 import { gql } from 'graphql-tag';
 import { readFileSync } from 'fs';
 import { join, dirname } from 'path';

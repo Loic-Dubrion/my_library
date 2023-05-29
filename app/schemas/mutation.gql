@@ -6,5 +6,7 @@ type BookMutationResponse implements MutationResponse {
 }
 
 type Mutation {
-  addBook(isbn: Int, title: String, author: String): Book
+  addBook(isbn: Int!, title: String!, authorName: String!): Book
+  updateBook(id: ID!, isbn: Int, title: String, authorId: ID): Book!
+  deleteBook(id: ID!): Boolean!
 }
